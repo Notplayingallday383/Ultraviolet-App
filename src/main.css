@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Inter;
+    src: url(../public/inter.ttf);
+}
+
+body {
+    font-family: Inter;
+    color: white;
+    background-color: #292929;
+    background-image: url("/public/hu_waves_v2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #242424;
+}
+
+.home {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background-color: transparent;
+    color: white;
+    object-fit: fill;
+}
+
+.footer .right {
+    margin-right: 7px;
+    position: fixed;
+    right: 0;
+    bottom: 0
+}
+
+.footer .left {
+    margin-left: 7px;
+    position: fixed;
+    left: 0;
+    bottom: 0
+}
+
+.bold {
+    font-weight: bolder;
+}

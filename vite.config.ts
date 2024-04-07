@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-// @ts-expect-error module exists mf
+import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
+// @ts-expect-error stfu
 import { libcurlPath } from "@mercuryworkshop/libcurl-transport"
 // @ts-expect-error module exists mf
 import { epoxyPath } from "@mercuryworkshop/epoxy-transport"
@@ -15,6 +16,11 @@ export default defineConfig({
   plugins: [
     viteStaticCopy({
       targets: [
+        {
+          src: `${uvPath}/**/*`.replace(/\\/g, "/"),
+          dest: "uv",
+          overwrite: false
+        },
         {
             src: `${baremuxPath}/**/*`.replace(/\\/g, "/"),
             dest: "mux",
