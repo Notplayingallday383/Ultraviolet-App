@@ -9,11 +9,9 @@ export default function Home() {
         <div>
             <Nav />
             <div class="home">
-                <img src="uv.png"></img>
+                <img src="uv.png" width="150" height="150"></img>
                 <h1 class="bold">Ultraviolet</h1>
-                <div class="search">
-                    <input placeholder=""></input>
-                </div>
+                <input id="search" class="search" placeholder="Search the web"></input>
             </div>
             <Footer />
         </div>
@@ -28,4 +26,4 @@ window.addEventListener("load", () => {
         // eslint-disable-next-line no-self-assign
         svgs[i].outerHTML = svgs[i].outerHTML
     }
-  });
+});

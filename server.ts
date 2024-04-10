@@ -6,6 +6,7 @@ import path from "path";
 import fs from "fs";
 import cookieParser from "cookie-parser";
 import wisp from "wisp-server-node";
+// @ts-expect-error no thank you TS
 import { libcurlPath } from "@mercuryworkshop/libcurl-transport"
 // @ts-expect-error no thank you TS
 import { baremuxPath } from "@mercuryworkshop/bare-mux";
@@ -13,7 +14,6 @@ import { baremuxPath } from "@mercuryworkshop/bare-mux";
 import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { Socket, Head } from "ws";
-import cors from "cors";
 import config from "dotenv";
 
 config.config();
@@ -118,13 +118,6 @@ server.on("upgrade", (req: Request, socket: Socket, head: Head) => {
 });
 
 const port = parseInt(process.env.PORT || "8080");
-const corsOptions = {
-  origin: `http://localhost:${port}`,
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-};
-
-app.use(cors(corsOptions));
 server.listen(port, () => {
   console.log('Welcome to Ultraviolet!')
   console.log(`Ultraviolet is running on port: ${port}`)
