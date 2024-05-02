@@ -27,8 +27,11 @@ dependencies:
     specifier: ^16.4.5
     version: 16.4.5
   dreamland:
-    specifier: ^0.0.3
-    version: 0.0.3
+    specifier: ^0.0.15
+    version: 0.0.15
+  dreamland-router:
+    specifier: github:mercuryWorkshop/dreamland-router
+    version: github.com/mercuryWorkshop/dreamland-router/85d65ec1cd94a62c824294a18f8fb8b14f0c21c9
   express:
     specifier: ^4.19.2
     version: 4.19.2
@@ -1081,8 +1084,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /dreamland@0.0.3:
-    resolution: {integrity: sha512-UrcKNX2616MwqZ6FZEYhg12PAez5rHpRzJqx3c5wjpJXEWJkcrSOqA/8aNQLf0kUEUMbdAh8pdzv0VGKTdYUXg==}
+  /dreamland@0.0.15:
+    resolution: {integrity: sha512-+9lfq0CprMaQlPS4V20tue7yQupiTWYBtgirlYFJan5U61nsZf77+NA/529eYvxfjjNvAQ1BAw72Vf5rc6u4kQ==}
     dev: false
 
   /eastasianwidth@0.2.0:
@@ -2497,3 +2500,10 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  github.com/mercuryWorkshop/dreamland-router/85d65ec1cd94a62c824294a18f8fb8b14f0c21c9:
+    resolution: {tarball: https://codeload.github.com/mercuryWorkshop/dreamland-router/tar.gz/85d65ec1cd94a62c824294a18f8fb8b14f0c21c9}
+    name: dreamland-router
+    version: 1.0.1
+    requiresBuild: true
+    dev: false
