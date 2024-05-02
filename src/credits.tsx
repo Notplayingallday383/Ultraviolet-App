@@ -1,6 +1,5 @@
 import Footer from "./components/footer";
 import Nav from "./components/nav";
-import LoadPage from "./utils/router";
 
 export default function Credits() {
     return (
@@ -18,7 +17,7 @@ export default function Credits() {
                     <li>Vite</li>
                     <li>AliceJS</li>
                 </ul>
-                <p class="clickable" on:click={() => {LoadPage("license")}}>Licensed Under the MIT License. Click this to read it.</p>
+                <p class="clickable" on:click={() => {window.location.href="/license"}}>Licensed Under the MIT License. Click this to read it.</p>
                 <p>&copy; Copyright 2024 Titanium Network</p>
             </div>
             <Footer />
