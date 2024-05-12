@@ -6,6 +6,9 @@ The deployable all-in-one bundle for [Ultraviolet](https://github.com/titaniumne
 
 ## Deployment
 
+> [!IMPORTANT]
+> **DO NOT** Create github issues about issues statically deploying, site compatability, etc
+
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
@@ -19,6 +22,11 @@ Support and updates can be found in our [Discord Server](discord.gg/unblock).
 
 > [!IMPORTANT]  
 > Until deployed on a domain with a valid SSL certificate, Firefox will not be able to load the site. Use chromium for testing on localhost
+### Deploying Statically
+
+If your trying to deploy this statically first, fork this repo and go to register-sw.js and change the wisp server to something public, an example of this would be `wss://tomp.app/wisp`.
+Next go to your static host and set the install command to `npm i` and set the build command to `npm run build`.
+Than you should be good to go! to update the site if a new update releases simply disregard the commit you made, sync the repo and do it again.
 
 ### HTTP Transport
 The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted. 
